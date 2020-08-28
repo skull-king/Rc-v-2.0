@@ -8,6 +8,32 @@ session = ~/.rTorrent_session
 port_range = 50000-50000
 port_random = no
 
+# Maximum and minimum number of peers to connect to per torrent.
+min_peers = 1
+max_peers = 100
+
+# Same as above but for seeding completed torrents (-1 = same as downloading)
+min_peers_seed = 1
+max_peers_seed = 50
+
+# Maximum number of uploads single torrent may use
+max_uploads = 10
+
+# Maximum number of simultaneous downloads
+max_downloads_global = 10
+# Maximum number of simultaneous uploads
+max_uploads_global = 50
+
+# Default directory to save the downloaded torrents.
+directory = ./Downloads
+
+# Upload to a minimum ratio of 10.0
+ratio.min.set=1000
+# Upload to a maximum ratio of 20.0
+ratio.max.set=2000
+# Upload a minimum of 250 MB
+ratio.upload.set=250M
+
 # Check the hash after the end of the download
 check_hash = yes
 
